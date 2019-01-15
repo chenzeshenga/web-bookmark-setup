@@ -19,3 +19,8 @@ https://www.webpackjs.com/
 https://www.npmjs.cn/all/
 
 https://blog.csdn.net/legend11/article/details/53408459 javacript onclick事件中传递对象参数
+
+----
+
+ubuntu 安装maven
+sudo apt-get maven
