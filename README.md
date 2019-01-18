@@ -71,4 +71,22 @@ ls -l /etc/init.d |grep mysql
 
 ----
 
+ubuntu 默认安装配置最新版rabbitmq
 
+```bash
+wget -O - 'https://dl.bintray.com/rabbitmq/Keys/rabbitmq-release-signing-key.asc' | sudo apt-key add -
+
+echo "deb https://dl.bintray.com/rabbitmq/debian bionic main erlang" | sudo tee /etc/apt/sources.list.d/bintray.rabbitmq.list
+
+apt-get update
+
+# 卸载之前安装的rabbitmq和erlang
+apt-get remove rabbitmq
+apt-get purge erlang
+apt-get autoremove
+
+apt-get install erlang
+apt-get install rabbitmq-server
+
+rabbitmqctl status
+```
