@@ -106,3 +106,12 @@ sudo rabbitmqctl list_users
 sudo rabbitmqctl add_user admin admin 
 sudo rabbitmqctl set_user_tags admin administrator
 ```
+
+----
+ubuntu 安装nodejs
+
+```bash
+sudo apt-get install curl
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+sudo apt-get install nodejs
+```
