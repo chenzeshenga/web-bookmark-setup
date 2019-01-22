@@ -115,3 +115,11 @@ sudo apt-get install curl
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 sudo apt-get install nodejs
 ```
+
+----
+ubuntu 安装mongodb
+```bash
+sudo apt-get install mongodb
+systemctl status/stop/start mongodb
+
+```
