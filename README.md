@@ -125,3 +125,31 @@ sudo apt-get install mongodb
 systemctl status/stop/start mongodb
 
 ```
+
+---
+ubuntu 安装docker
+```bash
+#从docker仓库下载安装docker
+sudo apt-get update
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
+
+sudo touch /etc/apt/sources.list.d/docker.list
+#添加docker地址
+deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable
+
+#添加秘钥
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+#安装docker
+sudo apt install docker-ce
+
+#查看版本信息
+docker --version
+
+#启动|停止|查看docker进程
+systemctl start | stop | status docker
+
+#查看是否开机启动
+ls -ltr /etc/init.d/ |grep docker
+
+```
